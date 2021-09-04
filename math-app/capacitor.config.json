@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "math-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

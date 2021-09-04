@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Atividade 1 - Calculadora </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h3 >{{ resultado }}</h3>
+    <form class="form">
+      
+      <div class="inputs">
+        <mat-form-field appearance="outline">
+          <mat-label>First number</mat-label>
+          <input [(ngModel)]="n1" name="n1" type="number" matInput placeholder="Ex. 10" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Second number</mat-label>
+          <input [(ngModel)]="n2" name="n2" type="number" matInput placeholder="Ex. 5" />
+        </mat-form-field>
+      </div>
+
+      <div class="buttons">
+        <button (click)="soma()" class="full-width" mat-stroked-button color="primary">Somar</button>
+        <button (click)="subtracao()" class="full-width" mat-stroked-button color="primary">Subtrair</button>
+        <button (click)="multiplicacao()" class="full-width" mat-stroked-button color="primary">Multiplicar</button>
+        <button (click)="divisao()" class="full-width" mat-stroked-button color="primary">Dividir</button>
+        <button (click)="potencia()" class="full-width" mat-stroked-button color="primary">Potencia</button>
+      </div>
+    </form>
+  </div>
+</ion-content>

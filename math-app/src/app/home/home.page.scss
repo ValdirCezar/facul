@@ -1,0 +1,24 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h3, input {
+  color: black;
+}
+
+.buttons {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: .4rem;
+}
